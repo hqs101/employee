@@ -5,58 +5,23 @@ import com.hnluchuan.staff.model.*;
 import java.util.List;
 
 public class EmployeeInffoDTO{
-    public User getUser() {
-        return user;
-    }
 
-    public void setUser(User user) {
+    private UserDTO user;
+    private EmployeeDTO employee;
+    private List<EducationDTO> educations;
+    private List<EmergencyContactDTO> emergencys;
+    private List<ExperienceDTO> experiences;
+    private List<FamilyDTO> families;
+
+    public EmployeeInffoDTO(UserDTO user , EmployeeDTO employee , List<EducationDTO> educations ,
+                            List<EmergencyContactDTO> emergencys , List<ExperienceDTO> experiences ,
+                            List<FamilyDTO> families){
+        super();
         this.user = user;
-    }
-
-    private User user;
-    private Employee employee;
-    private List<Education> educations;
-    private List<EmergencyContact> emergencys;
-    private List<Experience> experiences;
-    private List<Family> families;
-
-    public Employee getEmployee() {
-        return employee;
-    }
-
-    public void setEmployee(Employee employee) {
         this.employee = employee;
-    }
-
-    public List<Education> getEducations() {
-        return educations;
-    }
-
-    public void setEducations(List<Education> educations) {
         this.educations = educations;
-    }
-
-    public List<EmergencyContact> getEmergencys() {
-        return emergencys;
-    }
-
-    public void setEmergencys(List<EmergencyContact> emergencys) {
-        this.emergencys = emergencys;
-    }
-
-    public List<Experience> getExperiences() {
-        return experiences;
-    }
-
-    public void setExperiences(List<Experience> experiences) {
         this.experiences = experiences;
-    }
-
-    public List<Family> getFamilies() {
-        return families;
-    }
-
-    public void setFamilies(List<Family> families) {
+        this.emergencys = emergencys;
         this.families = families;
     }
 
@@ -64,14 +29,52 @@ public class EmployeeInffoDTO{
         super();
     }
 
-    public EmployeeInffoDTO(Employee employee , List<Education> educations ,
-                        List<EmergencyContact> emergencys , List<Experience> experiences ,
-                        List<Family> families ){
-        super();
+    public UserDTO getUser() {
+        return user;
+    }
+
+    public void setUser(UserDTO user) {
+        this.user = user;
+    }
+
+    public EmployeeDTO getEmployee() {
+        return employee;
+    }
+
+    public void setEmployee(EmployeeDTO employee) {
         this.employee = employee;
-        this.educations = educations ;
+    }
+
+    public List<EducationDTO> getEducations() {
+        return educations;
+    }
+
+    public void setEducations(List<EducationDTO> educations) {
+        this.educations = educations;
+    }
+
+    public List<EmergencyContactDTO> getEmergencys() {
+        return emergencys;
+    }
+
+    public void setEmergencys(List<EmergencyContactDTO> emergencys) {
         this.emergencys = emergencys;
+    }
+
+    public List<ExperienceDTO> getExperiences() {
+        return experiences;
+    }
+
+    public void setExperiences(List<ExperienceDTO> experiences) {
         this.experiences = experiences;
+    }
+
+    public List<FamilyDTO> getFamilies() {
+        return families;
+    }
+
+    public void setFamilies(List<FamilyDTO> families) {
         this.families = families;
     }
+
 }

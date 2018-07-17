@@ -82,10 +82,10 @@ public class AdminEmployeeController extends BaseController {
 			//取得input值
 			EmployeeDTO old = employeeService.load(dto.getEmployee().getId());
 			UserDTO old_user = userService.load(dto.getUser().getId());
-			List<Education> old_s_e = dto.getEducations();
-			List<EmergencyContact> old_s_em = dto.getEmergencys();
-			List<Experience> old_s_ex = dto.getExperiences();
-			List<Family> old_s_f = dto.getFamilies();
+			List<EducationDTO> old_s_e = dto.getEducations();
+			List<EmergencyContactDTO> old_s_em = dto.getEmergencys();
+			List<ExperienceDTO> old_s_ex = dto.getExperiences();
+			List<FamilyDTO> old_s_f = dto.getFamilies();
 
 			//修改user表
 			old_user.setUsername(dto.getUser().getUsername());
@@ -120,7 +120,9 @@ public class AdminEmployeeController extends BaseController {
 			//紧急联系人信息
 			Iterator it_em = old_s_em.iterator();		//用于插入数据
 			//插入前先删除数据
-			List<EmergencyContactDTO> del_q_em = emergencyContactService.findAll();
+			EmergencyContactDTO em_del = new EmergencyContactDTO();
+			em_del.setEmployee(old);
+			List<EmergencyContactDTO> del_q_em = emergencyContactService.find(em_del , null);
 			if(del_q_em.size() > 0){
 				for (EmergencyContactDTO del_dd : del_q_em) {
 					if(del_dd.getEmployee().getId() == old.getId())
@@ -140,7 +142,9 @@ public class AdminEmployeeController extends BaseController {
 			//工作经验信息
 			Iterator it_ex = old_s_ex.iterator();		//用于插入数据
 			//插入前先删除数据
-			List<ExperienceDTO> del_q = experienceService.findAll();
+			ExperienceDTO ex_del = new ExperienceDTO();
+			ex_del.setEmployee(old);
+			List<ExperienceDTO> del_q = experienceService.find(ex_del , null);
 			if(del_q.size() > 0){
 				for (ExperienceDTO del_dd : del_q) {
 					if(del_dd.getEmployee().getId() == old.getId())
@@ -160,7 +164,9 @@ public class AdminEmployeeController extends BaseController {
 			//家庭成员信息
 			Iterator it_f = old_s_f.iterator();		//用于插入数据
 			//插入前先删除数据
-			List<FamilyDTO> del_q_f = familyService.findAll();
+			FamilyDTO f_del = new FamilyDTO();
+			f_del.setEmployee(old);
+			List<FamilyDTO> del_q_f = familyService.find(f_del , null);
 			if(del_q_f.size() > 0){
 				for (FamilyDTO del_dd : del_q_f) {
 					if(del_dd.getEmployee().getId() == old.getId())
@@ -180,7 +186,9 @@ public class AdminEmployeeController extends BaseController {
 			//教育经历信息
 			Iterator it_e = old_s_e.iterator();		//用于插入数据
 			//插入前先删除数据
-			List<EducationDTO> del_q_e = educationService.findAll();
+			EducationDTO e_del = new EducationDTO();
+			e_del.setEmployee(old);
+			List<EducationDTO> del_q_e = educationService.find(e_del , null);
 			for (EducationDTO del_dd : del_q_e) {
 				if(del_dd.getEmployee().getId() == old.getId())
 					educationService.deleteById(del_dd.getId());
@@ -285,70 +293,60 @@ public class AdminEmployeeController extends BaseController {
 	@RequestMapping(value = "/add_employee")
 	public String add_employee(EmployeeInffoDTO dto){
 		//新建user
-		User user = dto.getUser();
-		user.setType(0);
-		List<User> user_list = new ArrayList<User>();
-		user_list.add(user);
-		List<UserDTO> userDTO = userService.toDTOs(user_list);
-		long id = userService.create(userDTO.get(0));
+		UserDTO userDTO = dto.getUser();
+		userDTO.setType(0);
+		long id = userService.create(userDTO);
 		if(id > 0){
 			//新建employee
-			Employee employee = dto.getEmployee();
-			user.setId(id);
+			EmployeeDTO employee = dto.getEmployee();
+			userDTO.setId(id);
 			if(employee.getName() != null && !employee.getName().equals("")){
-				employee.setUser(user);
-				employee.setEmail(user.getEmail());
-				List<Employee> employees_list = new ArrayList<Employee>();
-				employees_list.add(employee);
-				List<EmployeeDTO> employeeDTO = employeeService.toDTOs(employees_list);
-				if(employees_list.size() >= 1){
-					long create_id = employeeService.create(employeeDTO.get(0));
+				employee.setUser(userDTO);
+				employee.setEmail(userDTO.getEmail());
+				if(employee != null){
+					long create_id = employeeService.create(employee);
 					if(create_id > 0){
 						employee.setId(create_id);
 						//新建education
-						List<Education> education = dto.getEducations();
+						List<EducationDTO> education = dto.getEducations();
 						if(education.size() > 0){
-							for (Education e : education) {
+							for (EducationDTO e : education) {
 								if(e.getMajor() != null && !e.getMajor().equals("")){
 									e.setEmployee(employee);
-									EducationDTO educationDTO = educationService.toDTO(e);
-									educationService.create(educationDTO);
+									educationService.create(e);
 								}
 							}
 						}
 
 						//新建experience
-						List<Experience> experiences = dto.getExperiences();
+						List<ExperienceDTO> experiences = dto.getExperiences();
 						if(experiences.size() > 0){
-							for (Experience ex : experiences) {
+							for (ExperienceDTO ex : experiences) {
 								if(ex.getReason() != null && !ex.getReason().equals("")){
 									ex.setEmployee(employee);
-									ExperienceDTO experienceDTO = experienceService.toDTO(ex);
-									experienceService.create(experienceDTO);
+									experienceService.create(ex);
 								}
 							}
 						}
 
 						//新建emergency
-						List<EmergencyContact> emergencyContacts = dto.getEmergencys();
+						List<EmergencyContactDTO> emergencyContacts = dto.getEmergencys();
 						if(emergencyContacts.size() > 0){
-							for (EmergencyContact em : emergencyContacts) {
+							for (EmergencyContactDTO em : emergencyContacts) {
 								if(em.getName() != null && !em.getName().equals("")){
 									em.setEmployee(employee);
-									EmergencyContactDTO emergencyContactDTO = emergencyContactService.toDTO(em);
-									emergencyContactService.create(emergencyContactDTO);
+									emergencyContactService.create(em);
 								}
 							}
 						}
 
 						//新建family
-						List<Family> families = dto.getFamilies();
+						List<FamilyDTO> families = dto.getFamilies();
 						if(families.size() > 0){
-							for (Family f : families) {
+							for (FamilyDTO f : families) {
 								if(f.getName() != null && !f.getName().equals("")){
 									f.setEmployee(employee);
-									FamilyDTO familyDTO = familyService.toDTO(f);
-									familyService.create(familyDTO);
+									familyService.create(f);
 								}
 							}
 						}
