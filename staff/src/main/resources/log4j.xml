@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<!DOCTYPE log4j:configuration SYSTEM "log4j.dtd">
+
+<log4j:configuration debug="false"
+	xmlns:log4j="http://jakarta.apache.org/log4j/">
+
+	<appender name="console" class="org.apache.log4j.ConsoleAppender">
+		<param name="Target" value="System.out" />
+		<layout class="org.apache.log4j.PatternLayout">
+			<param name="ConversionPattern" value="%d{yyyy-MM-dd HH:mm:ss} %-5p [%t] [%C{2}.%M(%L)] - %m%n" />
+		</layout>
+	</appender>
+
+	<appender name="file" class="org.apache.log4j.DailyRollingFileAppender">
+		<param name="File" value="/tmp/log/web.log" />
+		 <param name="DatePattern" value="'.'yyyy-MM-dd'.log'" />
+		<param name="Append" value="true" /> 
+		<layout class="org.apache.log4j.PatternLayout">
+			<param name="ConversionPattern" value="%d{yyyy-MM-dd HH:mm:ss} %-5p [%t] [%C{2}.%M(%L)] - %m%n" />
+		</layout>
+	</appender>
+	
+	<appender name="mailAppender" class="org.apache.log4j.net.SMTPAppender">
+        <param name="evaluatorClass" value="com.hnluchuan.core.support.MyTriggeringEventEvaluator" />
+        <param name="BufferSize" value="50" />
+        <param name="SMTPHost" value="smtp.126.com" />
+        <param name="SMTPPort" value="25" />
+        <param name="SMTPUsername" value="zhukewen_java@126.com" />
+        <param name="SMTPPassword" value="jklmnl123456" />
+        <param name="From" value="zhukewen_java@126.com" />
+        <param name="To" value="441868461@qq.com" />
+        <param name="Subject" value="Exception of luchuan-web" />
+        <layout class="org.apache.log4j.PatternLayout">
+            <param name="ConversionPattern" value="[%d{ISO8601}]%n%n%-5p%n%n%c%n%n%m%n%n" />
+        </layout>
+        <filter class="org.apache.log4j.varia.LevelRangeFilter">
+            <param name="LevelMin" value="error" />
+            <param name="LevelMax" value="fatal" />
+        </filter>
+    </appender>
+ 
+	<logger name="org.springframework.security" additivity="false">
+		<level value="ERROR"/>
+		<appender-ref ref="console" />
+	</logger>
+	<!-- <logger name="org.springframework.transaction" additivity="false">
+		<level value="debug"/>
+		<appender-ref ref="console" />
+	</logger> -->
+	
+	<logger name="com.hnluchuan.staff" additivity="false">
+		<level value="DEBUG"/>
+		<appender-ref ref="console" />
+	</logger>
+	<logger name="com.hnluchuan.staff.web.MyDispatcherServlet" additivity="false">
+		<level value="ERROR"/>
+		<appender-ref ref="console" />
+		<appender-ref ref="file" />
+	</logger>
+	
+	<!-- 
+	<logger name="org.hibernate.SQL" additivity="false">
+		<level value="trace"/>
+		<appender-ref ref="console" />
+	</logger>
+	<logger name="org.hibernate.type" additivity="false">
+		<level value="trace"/>
+		<appender-ref ref="console" />
+	</logger>
+	 -->
+	<root>
+		<level value="error" />
+		<appender-ref ref="console" />
+		<appender-ref ref="file" />
+		<!-- <appender-ref ref="mailAppender" /> -->
+	</root>
+</log4j:configuration>

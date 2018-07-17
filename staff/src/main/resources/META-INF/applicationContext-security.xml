@@ -1,0 +1,85 @@
+<beans:beans xmlns="http://www.springframework.org/schema/security"
+	xmlns:beans="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+		http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+		http://www.springframework.org/schema/security
+		http://www.springframework.org/schema/security/spring-security.xsd">
+
+	<http pattern="/admin/login" security="none"/>
+	<http pattern="/admin/login?error=*" security="none"/>
+	<http pattern="/dev/login" security="none"/>
+	<http pattern="/dev/login?error=*" security="none"/>
+	<http pattern="/api/**/*" security="none"/>
+	<http pattern="/res/**/*" security="none"/>
+	<http pattern="/js/**/*" security="none"/>
+	<http pattern="/scripts/**/*" security="none"/>
+	<http pattern="/css/**/*" security="none"/>
+	<http pattern="/images/**/*" security="none"/>
+	<http pattern="/img/**/*" security="none"/>
+	
+	<http authentication-manager-ref="default-authentication-manager" pattern="/admin/**/*" >
+		<intercept-url pattern="/admin/**" access="hasRole('USER')" />
+		<intercept-url pattern="/admin/login" access="Anonymous"  />
+		<form-login login-processing-url="/admin/doLogin"
+				login-page="/admin/login"
+				username-parameter="j_username"
+				password-parameter="j_password"
+				authentication-success-handler-ref="myAuthenticationSuccessHandler"
+				/>
+		<logout invalidate-session="true" logout-url="/admin/j_spring_security_logout"/>
+			<csrf disabled="true"/>
+		    <headers>
+		        <frame-options policy="SAMEORIGIN"/>
+		    </headers>
+		    
+		    <!-- <custom-filter ref="loginFilter" before="FORM_LOGIN_FILTER"/> -->
+		    
+	</http>
+	
+	<http authentication-manager-ref="dev-authentication-manager" pattern="/dev/**/*">
+		<intercept-url pattern="/dev/**" access="hasRole('DEV')" />
+		<intercept-url pattern="/dev/login" access="Anonymous"  />
+		<form-login login-processing-url="/dev/doLogin"
+				login-page="/dev/login"
+				username-parameter="j_username"
+				password-parameter="j_password"
+				default-target-url='/dev/index' 
+				always-use-default-target='true' />
+		<logout invalidate-session="true" logout-url="/dev/j_spring_security_logout"/>
+			<csrf disabled="true"/>
+		    <headers>
+		        <frame-options policy="SAMEORIGIN"/>
+		    </headers>
+	</http>
+	
+	<authentication-manager id="default-authentication-manager">
+		<authentication-provider user-service-ref="userDetailsService" >
+			<password-encoder ref="encoder">
+				<salt-source user-property="username"/>
+			</password-encoder>
+		</authentication-provider>
+	</authentication-manager>
+	
+	<authentication-manager id="dev-authentication-manager">
+		<authentication-provider >
+			<user-service>
+				<user name="dev" password="339f59df2e4ec26562c71653d8ed24ba" authorities="ROLE_DEV"/>
+			</user-service>
+			<password-encoder ref="encoder">
+				<salt-source user-property="username"/>
+			</password-encoder>
+		</authentication-provider>
+	</authentication-manager> 
+	
+	<beans:bean id="loginFilter" class="com.hnluchuan.staff.security.MyUsernamePasswordAuthenticationFilter">
+		<beans:property name="authenticationManager" ref="default-authentication-manager"></beans:property>
+		<beans:property name="authenticationSuccessHandler" ref="myAuthenticationSuccessHandler"></beans:property>
+		<beans:property name="authenticationFailureHandler">
+			<beans:bean class="org.springframework.security.web.authentication.SimpleUrlAuthenticationFailureHandler">
+				<beans:property name="defaultFailureUrl" value="/admin/login?error=1"></beans:property>
+			</beans:bean>
+		</beans:property>
+	</beans:bean>
+		
+	<global-method-security pre-post-annotations="enabled" secured-annotations="enabled"/>
+</beans:beans>

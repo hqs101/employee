@@ -1,0 +1,385 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<%@ taglib prefix="spring" uri="http://www.springframework.org/tags"%>
+<%@ taglib prefix="form" uri="http://www.springframework.org/tags/form"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+<%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt"%>
+<%@ taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/functions"%>
+<%@ taglib prefix="sec" uri="http://www.springframework.org/security/tags"%>
+<%@ taglib prefix="enum" uri="http://www.hnluchuan.com/enum" %>
+
+<%@include file="/common/head.jsp" %>
+
+<body class="gray-bg">
+    <div class="wrapper wrapper-content animated fadeInRight">
+		<form action="${ctx }/admin/employee/save?id=${n.id }" id="detail-form" class="form-horizontal" method="post">
+            <!-- 用户基本信息 -->
+            <div style="text-align: center ; font-size: 20px ; font-weight: bold"><p>员工基本信息</p></div>
+            <div class="form-group">
+				 <!-- 用户ID -->
+                 <label class="col-sm-2 control-label">用户ID</label>
+                 <div class="col-sm-4">
+                 	<input id="user-id" name="employee.user.id" value="${n.user.id }" class="form-control">
+                    <input type="hidden" id="user-name" name="employee.user.username" value="${n.user.username }" class="form-control">
+                 </div>
+                 
+				 <!-- 岗位 -->
+                 <label class="col-sm-2 control-label">岗位</label>
+                 <div class="col-sm-4">
+                 	<input type="text" class="form-control" name="employee.position" value="${n.position }">
+                 </div>
+            </div>
+            <div class="form-group">     
+                 
+				 <!-- 姓名 -->
+                 <label class="col-sm-2 control-label">姓名</label>
+                 <div class="col-sm-4">
+                 	<input type="text" class="form-control" name="employee.name" value="${n.name }">
+                 </div>
+
+				 <!-- 出生日期 -->
+                 <label class="col-sm-2 control-label">出生日期</label>
+                 <div class="col-sm-4">
+                 	<input type="text" class="form-control" name="employee.birth" value="<fmt:formatDate value='${n.birth }' pattern='yyyy-MM-dd'/>" onclick="laydate({format: ''})">
+                 </div>
+            </div>
+            <div class="form-group">     
+                 
+				 <!-- 性别 -->
+                 <label class="col-sm-2 control-label">性别</label>
+                 <div class="col-sm-4">
+                 	<input type="text" class="form-control" name="employee.sex" value="${n.sex }">
+                 </div>
+                 
+				 <!-- 身高 -->
+                 <label class="col-sm-2 control-label">身高</label>
+                 <div class="col-sm-4">
+                 	<input type="text" class="form-control" name="employee.height" value="${n.height }">
+                 </div>
+            </div>
+            <div class="form-group">     
+                 
+				 <!-- 体重 -->
+                 <label class="col-sm-2 control-label">体重</label>
+                 <div class="col-sm-4">
+                 	<input type="text" class="form-control" name="employee.weight" value="${n.weight }">
+                 </div>
+                 
+				 <!-- 籍贯 -->
+                 <label class="col-sm-2 control-label">籍贯</label>
+                 <div class="col-sm-4">
+                 	<input type="text" class="form-control" name="employee.place" value="${n.place }">
+                 </div>
+            </div>
+            <div class="form-group">     
+                 
+				 <!-- 民族 -->
+                 <label class="col-sm-2 control-label">民族</label>
+                 <div class="col-sm-4">
+                 	<input type="text" class="form-control" name="employee.nation" value="${n.nation }">
+                 </div>
+                 
+				 <!-- 联系电话 -->
+                 <label class="col-sm-2 control-label">联系电话</label>
+                 <div class="col-sm-4">
+                 	<input type="text" class="form-control" name="employee.phone" value="${n.phone }">
+                 </div>
+            </div>
+            <div class="form-group">     
+                 
+				 <!-- 身份证号 -->
+                 <label class="col-sm-2 control-label">身份证号</label>
+                 <div class="col-sm-4">
+                 	<input type="text" class="form-control" name="employee.iDCard" value="${n.iDCard }">
+                 </div>
+                 
+				 <!-- 毕业学校 -->
+                 <label class="col-sm-2 control-label">毕业学校</label>
+                 <div class="col-sm-4">
+                 	<input type="text" class="form-control" name="employee.school" value="${n.school }">
+                 </div>
+            </div>
+            <div class="form-group">     
+                 
+				 <!-- 专业 -->
+                 <label class="col-sm-2 control-label">专业</label>
+                 <div class="col-sm-4">
+                 	<input type="text" class="form-control" name="employee.major" value="${n.major }">
+                 </div>
+                 
+				 <!-- 学历 -->
+                 <label class="col-sm-2 control-label">学历</label>
+                 <div class="col-sm-4">
+                 	<input type="text" class="form-control" name="employee.education" value="${n.education }">
+                 </div>
+            </div>
+            <div class="form-group">     
+                 
+				 <!-- 户口所在地 -->
+                 <label class="col-sm-2 control-label">户口所在地</label>
+                 <div class="col-sm-4">
+                 	<input type="text" class="form-control" name="employee.location" value="${n.location }">
+                 </div>
+                 
+				 <!-- 居住地址 -->
+                 <label class="col-sm-2 control-label">居住地址</label>
+                 <div class="col-sm-4">
+                 	<input type="text" class="form-control" name="employee.address" value="${n.address }">
+                 </div>
+            </div>
+            <div class="form-group">     
+                 
+				 <!-- 微信号 -->
+                 <label class="col-sm-2 control-label">微信号</label>
+                 <div class="col-sm-4">
+                 	<input type="text" class="form-control" name="employee.wechat" value="${n.wechat }">
+                 </div>
+                 
+				 <!-- 邮箱 -->
+                 <label class="col-sm-2 control-label">邮箱</label>
+                 <div class="col-sm-4">
+                 	<input type="text" class="form-control" name="employee.email" value="${n.email }">
+                 </div>
+            </div>
+            <div class="form-group">     
+                 
+				 <!-- 婚姻状况 -->
+                 <label class="col-sm-2 control-label">婚姻状况</label>
+                 <div class="col-sm-4">
+                 	<input type="text" class="form-control" name="employee.marry" value="${n.marry }">
+                 </div>
+                 
+				 <!-- 入职时间 -->
+                 <label class="col-sm-2 control-label">入职时间</label>
+                 <div class="col-sm-4">
+                 	<input type="text" class="form-control" name="employee.inTime" value="<fmt:formatDate value='${n.inTime }' pattern='yyyy-MM-dd'/>" onclick="laydate({format: ''})">
+                 </div>
+            </div>
+            <div class="form-group">     
+                 
+				 <!-- 员工状态/1.录用/2.停职 -->
+                 <label class="col-sm-2 control-label">员工状态/1.录用/2.停职</label>
+                 <div class="col-sm-4">
+                 	${enum:detail('EmployeeStatus', 'status', n.status)}
+                 </div>
+                 
+             </div>
+
+            <!--员工学历信息开始-->
+            <div style="text-align: center ; font-size: 20px ; font-weight: bold"><p>员工学历信息</p></div>
+            <div>
+                <div id="education_con">
+                    <div id="educationInfo" name=" name">
+                        <button type="button" class="btn btn-sm btn-outline btn-danger" onclick="del(this);">删除</button>
+                        <div class="form-group">
+                            <label class="col-sm-2 control-label">学习起始时间</label>
+                            <div class="col-sm-4">
+                                <input type="text" class="form-control" name="start" value="<fmt:formatDate value='${n_e.start }' pattern='yyyy-MM-dd'/>" onclick="laydate({format: ''})">
+                            </div>
+                            <!-- 学习结束时间 -->
+                            <label class="col-sm-2 control-label">学习结束时间</label>
+                            <div class="col-sm-4">
+                                <input type="text" class="form-control" name="end" value="<fmt:formatDate value='${n_e.end }' pattern='yyyy-MM-dd'/>" onclick="laydate({format: ''})">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-sm-2 control-label">专业</label>
+                            <div class="col-sm-4">
+                                <input type="text" class="form-control" name="major" value="${n_e.major}">
+                            </div>
+                            <!-- 学历 -->
+                            <label class="col-sm-2 control-label">学历</label>
+                            <div class="col-sm-4">
+                                <input type="text" class="form-control" name="record" value="${n_e.record}">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-sm-2 control-label">证书</label>
+                            <div class="col-sm-4">
+                                <input type="text" class="form-control" name="certificate" value="${n_e.certificate}">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div style="text-align: center">
+                    <p>
+                        <button type="button" class="btn btn-sm btn-outline btn-primary" onclick="add_education()"><i class="fa fa-plus"></i> 新增</button>
+                    </p>
+                </div>
+            </div>
+
+
+            <!--员工紧急联系人信息开始-->
+            <div style="text-align: center ; font-size: 20px ; font-weight: bold"><p>员工紧急联系人信息</p></div>
+            <div>
+            <div id="emergencyInfo_con">
+                <div id="emergencyInfo" name="name">
+                    <button type="button" class="btn btn-sm btn-outline btn-danger" onclick="del(this);">删除</button>
+                    <div class="form-group">
+                        <label class="col-sm-2 control-label">姓名</label>
+                        <div class="col-sm-4">
+                            <input type="text" class="form-control" name="emergencys[0].name" value="${n_em.name}">
+                        </div>
+                        <label class="col-sm-2 control-label">关系</label>
+                        <div class="col-sm-4">
+                            <input type="text" class="form-control" name="emergencys[0].relation" value="${n_em.relation}">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-sm-2 control-label">联系电话</label>
+                        <div class="col-sm-4">
+                            <input type="text" class="form-control" name="emergencys[0].phone" value="${n_em.phone}">
+                        </div>
+                        <label class="col-sm-2 control-label">单位或住址</label>
+                        <div class="col-sm-4">
+                            <input type="text" class="form-control" name="emergencys[0].address" value="${n_em.address}">
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+                <div style="text-align: center">
+                    <p>
+                        <button type="button" class="btn btn-sm btn-outline btn-primary" onclick="add_emergency()"><i class="fa fa-plus"></i> 新增</button>
+                    </p>
+                </div>
+            </div>
+
+            <!--员工工作经验信息开始-->
+            <div style="text-align: center ; font-size: 20px ; font-weight: bold"><p>员工工作经验信息</p></div>
+            <div>
+                <div id="expericnceInfo_con">
+                    <div id="expericnceInfo" name="name">
+                        <button type="button" class="btn btn-sm btn-outline btn-danger" onclick="del(this);">删除</button>
+                        <div class="form-group">
+                            <label class="col-sm-2 control-label">离职原因</label>
+                            <div class="col-sm-4">
+                                <input type="text" class="form-control" name="experiences[0].reason" value="${n_ex.reason}">
+                            </div>
+                            <label class="col-sm-2 control-label">单位</label>
+                            <div class="col-sm-4">
+                                <input type="text" class="form-control" name="experiences[0].company" value="${n_ex.company}">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-sm-2 control-label">工作</label>
+                            <div class="col-sm-4">
+                                <input type="text" class="form-control" name="experiences[0].work" value="${n_ex.work}">
+                            </div>
+                            <label class="col-sm-2 control-label">职位</label>
+                            <div class="col-sm-4">
+                                <input type="text" class="form-control" name="experiences[0].position" value="${n_ex.position}">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-sm-2 control-label">工作起始时间</label>
+                            <div class="col-sm-4">
+                                <input type="text" class="form-control" name="experiences[0].start" value="<fmt:formatDate value='${n_ex.start }' pattern=''/>" onclick="laydate({format: ''})">
+                            </div>
+                            <label class="col-sm-2 control-label">工作结束时间</label>
+                            <div class="col-sm-4">
+                                <input type="text" class="form-control" name="experiences[0].end" value="<fmt:formatDate value='${n_ex.end}' pattern=''/>" onclick="laydate({format: ''})">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div style="text-align: center">
+                    <p>
+                        <button type="button" class="btn btn-sm btn-outline btn-primary" onclick="add_expericnce()"><i class="fa fa-plus"></i> 新增</button>
+                    </p>
+                </div>
+            </div>
+
+
+            <!--员工家庭成员信息开始-->
+            <div style="text-align: center ; font-size: 20px ; font-weight: bold"><p>员工家庭成员信息</p></div>
+            <div>
+                <div id="family_con">
+                    <div id="familyInfo">
+                        <button type="button" class="btn btn-sm btn-outline btn-danger" onclick="del(this);">删除</button>
+                        <div class="form-group">
+                            <label class="col-sm-2 control-label">姓名</label>
+                            <div class="col-sm-4">
+                                <input type="text" class="form-control" name="families[0].name" value="${n_f.name}">
+                            </div>
+                            <label class="col-sm-2 control-label">关系</label>
+                            <div class="col-sm-4">
+                                <input type="text" class="form-control" name="families[0].relation" value="${n_f.relation}">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-sm-2 control-label">联系方式</label>
+                            <div class="col-sm-4">
+                                <input type="text" class="form-control" name="families[0].contact" value="${n_f.contact}">
+                            </div>
+                            <label class="col-sm-2 control-label">年龄</label>
+                            <div class="col-sm-4">
+                                <input type="text" class="form-control" name="families[0].age" value="${n_f.age}">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-sm-2 control-label">工作单位</label>
+                            <div class="col-sm-4">
+                                <input type="text" class="form-control" name="families[0].company" value="${n_f.company}">
+                            </div>
+                            <label class="col-sm-2 control-label">职位</label>
+                            <div class="col-sm-4">
+                                <input type="text" class="form-control" name="families[0].position" value="${n_f.position}">
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div style="text-align: center">
+                    <p>
+                        <button type="button" class="btn btn-sm btn-outline btn-primary" onclick="add_family()"><i class="fa fa-plus"></i> 新增</button>
+                    </p>
+                </div>
+            </div>
+
+
+    </form>
+</div>
+
+<%@include file="/common/foot.jsp" %>
+<script>
+    function add_emergency(){
+        var div_ = document.getElementById("emergencyInfo").cloneNode(true);
+        var inputs = div_.getElementsByTagName("input");
+        for(var i = 0 ; i < inputs.length ; i++)
+            inputs[i].value = "";
+        document.getElementById("emergencyInfo_con").appendChild(div_);
+    }
+
+    function add_education(){
+        var div_ = document.getElementById("educationInfo").cloneNode(true);
+
+        var inputs = div_.getElementsByTagName("input");
+        for(var i = 0 ; i < inputs.length ; i++)
+            inputs[i].value = "";
+        document.getElementById("education_con").appendChild(div_);
+    }
+
+    function add_expericnce(){
+        var div_ = document.getElementById("expericnceInfo").cloneNode(true);
+        var inputs = div_.getElementsByTagName("input");
+        for(var i = 0 ; i < inputs.length ; i++)
+            inputs[i].value = "";
+        document.getElementById("expericnceInfo_con").appendChild(div_);
+    }
+
+    function add_family(){
+        var div_ = document.getElementById("familyInfo").cloneNode(true);
+        var inputs = div_.getElementsByTagName("input");
+        for(var i = 0 ; i < inputs.length ; i++)
+            inputs[i].value = "";
+        document.getElementById("family_con").appendChild(div_);
+    }
+
+    function del(button){
+       var div1 = button.parentElement;
+       if(div1.nextElementSibling != null || div1.previousElementSibling != null)
+            div1.remove();
+    }
+</script>
+</body>
+</html>
