@@ -15,11 +15,6 @@
             <!-- 用户基本信息 -->
             <div style="text-align: center ; font-size: 20px ; font-weight: bold"><p>员工基本信息</p></div>
             <div class="form-group">
-				 <!-- 用户ID -->
-                 <label class="col-sm-2 control-label">用户ID</label>
-                 <div class="col-sm-4">
-                 	<input id="user-id" name="user.id" value="${n.user.id }" class="form-control">
-                 </div>
                 <!-- 用户名 -->
                 <label class="col-sm-2 control-label">用户名</label>
                 <div class="col-sm-4">

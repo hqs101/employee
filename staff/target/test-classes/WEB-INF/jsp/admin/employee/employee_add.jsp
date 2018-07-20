@@ -1,10 +1,10 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
-<%@ taglib prefix="spring" uri="http://www.springframework.org/tags"%>
-<%@ taglib prefix="form" uri="http://www.springframework.org/tags/form"%>
-<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
-<%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt"%>
-<%@ taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/functions"%>
-<%@ taglib prefix="sec" uri="http://www.springframework.org/security/tags"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
+<%@ taglib prefix="spring" uri="http://www.springframework.org/tags" %>
+<%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
+<%@ taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/functions" %>
+<%@ taglib prefix="sec" uri="http://www.springframework.org/security/tags" %>
 <%@ taglib prefix="enum" uri="http://www.hnluchuan.com/enum" %>
 
 <%@include file="/common/head.jsp" %>
@@ -37,10 +37,10 @@
             <!-- 员工状态/1.录用/2.停职 -->
             <label class="col-sm-2 control-label">员工状态</label>
             <div class="col-sm-4">
-               <select name="employee.status" class="form-control">
-                   <option value="1">录用</option>
-                   <option value="2">停职</option>
-               </select>
+                <select name="employee.status" class="form-control">
+                    <option value="1">录用</option>
+                    <option value="2">停职</option>
+                </select>
             </div>
         </div>
         <div class="form-group">
@@ -48,7 +48,8 @@
             <!-- 姓名 -->
             <label class="col-sm-2 control-label">姓名</label>
             <div class="col-sm-4">
-                <input id="name" type="text" class="form-control" name="employee.name" value="" onblur="chenkname(this)">
+                <input id="name" type="text" class="form-control" name="employee.name" value=""
+                       onblur="chenkname(this)">
                 <span id="name_err" style="display: none; color: red;">姓名不能为空！</span>
             </div>
 
@@ -72,7 +73,8 @@
             <!-- 身高 -->
             <label class="col-sm-2 control-label">身高</label>
             <div class="col-sm-4">
-                <input id="height" type="text" class="form-control" name="employee.height" value="" onblur="checkheight(this)">
+                <input id="height" type="text" class="form-control" name="employee.height" value=""
+                       onblur="checkheight(this)">
                 <span id="height_err" style="display: none; color: red;">身高格式不正确！</span>
             </div>
         </div>
@@ -81,7 +83,8 @@
             <!-- 体重 -->
             <label class="col-sm-2 control-label">体重</label>
             <div class="col-sm-4">
-                <input id="width" type="text" class="form-control" name="employee.weight" value="" onblur="checkwidth(this)">
+                <input id="width" type="text" class="form-control" name="employee.weight" value=""
+                       onblur="checkwidth(this)">
                 <span id="width_err" style="display: none; color: red;">体重格式不正确！</span>
             </div>
 
@@ -190,12 +193,14 @@
                 <div class="form-group">
                     <label class="col-sm-2 control-label">学习起始时间</label>
                     <div class="col-sm-4">
-                        <input type="text" class="form-control" name="educations[10].start" value="" onclick="laydate({format: ''})">
+                        <input type="text" class="form-control" name="educations[10].start" value=""
+                               onclick="laydate({format: ''})">
                     </div>
                     <!-- 学习结束时间 -->
                     <label class="col-sm-2 control-label">学习结束时间</label>
                     <div class="col-sm-4">
-                        <input type="text" class="form-control" name="educations[10].end" value="" onclick="laydate({format: ''})">
+                        <input type="text" class="form-control" name="educations[10].end" value=""
+                               onclick="laydate({format: ''})">
                     </div>
                 </div>
                 <div class="form-group">
@@ -228,7 +233,9 @@
             </div>
             <div style="text-align: center">
                 <p>
-                    <button type="button" class="btn btn-sm btn-outline btn-primary" onclick="add_education()"><i class="fa fa-plus"></i> 新增</button>
+                    <button type="button" class="btn btn-sm btn-outline btn-primary" onclick="add_education()"><i
+                            class="fa fa-plus"></i> 新增
+                    </button>
                 </p>
             </div>
         </div>
@@ -265,7 +272,9 @@
             </div>
             <div style="text-align: center">
                 <p>
-                    <button type="button" class="btn btn-sm btn-outline btn-primary" onclick="add_emergency()"><i class="fa fa-plus"></i> 新增</button>
+                    <button type="button" class="btn btn-sm btn-outline btn-primary" onclick="add_emergency()"><i
+                            class="fa fa-plus"></i> 新增
+                    </button>
                 </p>
             </div>
         </div>
@@ -275,7 +284,7 @@
         <div>
             <!--克隆模板-->
             <div id="clone_ex" style="display: none">
-                <input type="hidden"name="experiences[10].id" value="" class="form-control">
+                <input type="hidden" name="experiences[10].id" value="" class="form-control">
                 <button type="button" class="btn btn-sm btn-outline btn-danger" onclick="del(this);">删除</button>
                 <div class="form-group">
                     <label class="col-sm-2 control-label">离职原因</label>
@@ -300,11 +309,13 @@
                 <div class="form-group">
                     <label class="col-sm-2 control-label">工作起始时间</label>
                     <div class="col-sm-4">
-                        <input type="text" class="form-control" name="experiences[10].start" value="" onclick="laydate({format: ''})">
+                        <input type="text" class="form-control" name="experiences[10].start" value=""
+                               onclick="laydate({format: ''})">
                     </div>
                     <label class="col-sm-2 control-label">工作结束时间</label>
                     <div class="col-sm-4">
-                        <input type="text" class="form-control" name="experiences[10].end" value="" onclick="laydate({format: ''})">
+                        <input type="text" class="form-control" name="experiences[10].end" value=""
+                               onclick="laydate({format: ''})">
                     </div>
                 </div>
             </div>
@@ -312,7 +323,9 @@
             </div>
             <div style="text-align: center">
                 <p>
-                    <button type="button" class="btn btn-sm btn-outline btn-primary" onclick="add_expericnce()"><i class="fa fa-plus"></i> 新增</button>
+                    <button type="button" class="btn btn-sm btn-outline btn-primary" onclick="add_expericnce()"><i
+                            class="fa fa-plus"></i> 新增
+                    </button>
                 </p>
             </div>
         </div>
@@ -360,7 +373,9 @@
             </div>
             <div style="text-align: center">
                 <p>
-                    <button type="button" class="btn btn-sm btn-outline btn-primary" onclick="add_family()"><i class="fa fa-plus"></i> 新增</button>
+                    <button type="button" class="btn btn-sm btn-outline btn-primary" onclick="add_family()"><i
+                            class="fa fa-plus"></i> 新增
+                    </button>
                 </p>
             </div>
         </div>
@@ -369,13 +384,13 @@
 
 <%@include file="/common/foot.jsp" %>
 <script>
-    function add_emergency(){
+    function add_emergency() {
         var div_ = document.getElementById("clone_em").cloneNode(true);
         var inputs = div_.getElementsByTagName("input");
         var e_div_sum = document.getElementById("emergencyInfo_con").childElementCount;
-        for(var i = 0 ; i < inputs.length ; i++){
+        for (var i = 0; i < inputs.length; i++) {
             var inputName = inputs[i].name;
-            var newInputName = inputName.replace(/[0-9]+/ , e_div_sum);
+            var newInputName = inputName.replace(/[0-9]+/, e_div_sum);
             inputs[i].name = newInputName;
         }
         div_.style.display = "block";
@@ -383,26 +398,26 @@
 
         var div_clone = document.getElementById("clone_em");
         var clone_inputs = div_clone.getElementsByTagName("input");
-        for(var j = 0 ; j < clone_inputs.length ; j++){
+        for (var j = 0; j < clone_inputs.length; j++) {
             var inputName = clone_inputs[j].name;
-            var newInputName = inputName.replace(/[0-9]+/ , (e_div_sum + 1));
+            var newInputName = inputName.replace(/[0-9]+/, (e_div_sum + 1));
             clone_inputs[j].name = newInputName;
         }
     }
 
-    function add_education(){
+    function add_education() {
         var div_ = document.getElementById("clone_e").cloneNode(true);
         var inputs = div_.getElementsByTagName("input");
         var e_div_sum = document.getElementById("education_con").childElementCount;
-        for(var i = 0 ; i < inputs.length ; i++){
+        for (var i = 0; i < inputs.length; i++) {
             var inputName = inputs[i].name;
-            var newInputName = inputName.replace(/[0-9]+/ , e_div_sum);
+            var newInputName = inputName.replace(/[0-9]+/, e_div_sum);
             inputs[i].name = newInputName;
         }
         var selects = div_.getElementsByTagName("select");
-        for(var k = 0 ; k < selects.length ; k++ ){
-            var selectname = selects[k].name ;
-            var newname = selectname.replace(/[0-9]+/ , e_div_sum);
+        for (var k = 0; k < selects.length; k++) {
+            var selectname = selects[k].name;
+            var newname = selectname.replace(/[0-9]+/, e_div_sum);
             selects[k].name = newname;
         }
 
@@ -413,26 +428,26 @@
 
         var div_clone = document.getElementById("clone_e");
         var clone_inputs = div_clone.getElementsByTagName("input");
-        for(var j = 0 ; j < clone_inputs.length; j++){
+        for (var j = 0; j < clone_inputs.length; j++) {
             var inputName = clone_inputs[j].name;
-            var newInputName = inputName.replace(/[0-9]+/ , (e_div_sum + 1));
+            var newInputName = inputName.replace(/[0-9]+/, (e_div_sum + 1));
             clone_inputs[j].name = newInputName;
         }
         var selects_clone = div_clone.getElementsByTagName("select");
-        for(var ks = 0 ; ks < selects_clone.length ; ks++ ){
-            var selectname = selects_clone[ks].name ;
-            var newname = selectname.replace(/[0-9]+/ , (e_div_sum + 1));
+        for (var ks = 0; ks < selects_clone.length; ks++) {
+            var selectname = selects_clone[ks].name;
+            var newname = selectname.replace(/[0-9]+/, (e_div_sum + 1));
             selects_clone[ks].name = newname;
         }
     }
 
-    function add_expericnce(){
+    function add_expericnce() {
         var div_ = document.getElementById("clone_ex").cloneNode(true);
         var inputs = div_.getElementsByTagName("input");
         var ex_div_sum = document.getElementById("expericnceInfo_con").childElementCount;
-        for(var i = 0 ; i < inputs.length ; i++){
+        for (var i = 0; i < inputs.length; i++) {
             var inputName = inputs[i].name;
-            var newInputName = inputName.replace(/[0-9]+/ , ex_div_sum);
+            var newInputName = inputName.replace(/[0-9]+/, ex_div_sum);
             inputs[i].name = newInputName;
         }
         div_.style.display = "block";
@@ -442,47 +457,47 @@
 
         var div_clone = document.getElementById("clone_ex");
         var clone_inputs = div_clone.getElementsByTagName("input");
-        for(var j = 0 ; j < clone_inputs.length; j++){
+        for (var j = 0; j < clone_inputs.length; j++) {
             var inputName = clone_inputs[j].name;
-            var newInputName = inputName.replace(/[0-9]+/ , (ex_div_sum + 1));
+            var newInputName = inputName.replace(/[0-9]+/, (ex_div_sum + 1));
             clone_inputs[j].name = newInputName;
         }
     }
 
-    function add_family(){
+    function add_family() {
         var div_ = document.getElementById("clone_f").cloneNode(true);
         var inputs = div_.getElementsByTagName("input");
         var f_div_sum = document.getElementById("family_con").childElementCount;
-        for(var i = 0 ; i < inputs.length ; i++){
+        for (var i = 0; i < inputs.length; i++) {
             var inputName = inputs[i].name;
-            var newInputName = inputName.replace(/[0-9]+/ , f_div_sum);
+            var newInputName = inputName.replace(/[0-9]+/, f_div_sum);
             inputs[i].name = newInputName;
         }
-        div_.style.display="block";
+        div_.style.display = "block";
         div_.id = "familyInfo";
         div_.name = "familyName";
         document.getElementById("family_con").appendChild(div_);
 
         var div_clone = document.getElementById("clone_f");
         var clone_inputs = div_clone.getElementsByTagName("input");
-        for(var j = 0 ; j < clone_inputs.length; j++){
+        for (var j = 0; j < clone_inputs.length; j++) {
             var inputName = clone_inputs[j].name;
-            var newInputName = inputName.replace(/[0-9]+/ , (f_div_sum + 1));
+            var newInputName = inputName.replace(/[0-9]+/, (f_div_sum + 1));
             clone_inputs[j].name = newInputName;
         }
     }
 
-    function del(button){
+    function del(button) {
         var div1 = button.parentElement;
         div1.remove();
     }
 
     function checkusername(username) {
-        var user_name =  username.value;
-        if(user_name == ""){
-           document.getElementById("userid").focus();
-           document.getElementById("username_err").style.display = "block";
-        }else{
+        var user_name = username.value;
+        if (user_name == "") {
+            document.getElementById("userid").focus();
+            document.getElementById("username_err").style.display = "block";
+        } else {
             document.getElementById("username_err").style.display = "none";
         }
     }
@@ -490,10 +505,10 @@
     function checkemail(emailcheck) {
         var reg = new RegExp("^[a-zA-Z0-9]+@[a-zA-Z0-9]+.[a-zA-Z0-9]+$");
         var emailvalue = emailcheck.value;
-        if(emailvalue == "" || !reg.test(emailvalue)){
+        if (emailvalue == "" || !reg.test(emailvalue)) {
             document.getElementById("email").focus();
             document.getElementById("email_err").style.display = "block";
-        }else{
+        } else {
             document.getElementById("email_err").style.display = "none";
         }
     }
@@ -501,10 +516,10 @@
     function checkheight(height) {
         var reg = new RegExp("^\\d+(\\.\\d+)?$");
         var heightvalue = height.value;
-        if(heightvalue == "" || !reg.test(heightvalue)){
+        if (heightvalue == "" || !reg.test(heightvalue)) {
             document.getElementById("height").focus();
             document.getElementById("height_err").style.display = "block";
-        }else{
+        } else {
             document.getElementById("height_err").style.display = "none";
         }
     }
@@ -512,20 +527,20 @@
     function checkwidth(height) {
         var reg = new RegExp("^\\d+(\\.\\d+)?$");
         var widthvalue = width.value;
-        if(widthvalue == "" || !reg.test(widthvalue)){
+        if (widthvalue == "" || !reg.test(widthvalue)) {
             document.getElementById("width").focus();
             document.getElementById("width_err").style.display = "block";
-        }else{
+        } else {
             document.getElementById("width_err").style.display = "none";
         }
     }
 
     function chenkname(name) {
-        var names =  name.value;
-        if(names == ""){
+        var names = name.value;
+        if (names == "") {
             document.getElementById("name").focus();
             document.getElementById("name_err").style.display = "block";
-        }else{
+        } else {
             document.getElementById("name_err").style.display = "none";
         }
     }

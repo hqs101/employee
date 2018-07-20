@@ -15,56 +15,12 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="employee_detail.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/staff/src/main/webapp/WEB-INF/jsp/admin/employee/employee_detail.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="139">
-              <caret line="249" column="47" lean-forward="true" selection-start-line="249" selection-start-column="47" selection-end-line="249" selection-end-column="47" />
-              <folding>
-                <element signature="n#div#1;n#form#0;n#div#0;n#body#0;n#!!top" />
-                <element signature="n#div#2;n#form#0;n#div#0;n#body#0;n#!!top" />
-                <element signature="n#div#3;n#form#0;n#div#0;n#body#0;n#!!top" />
-                <element signature="n#div#4;n#form#0;n#div#0;n#body#0;n#!!top" />
-                <element signature="n#div#5;n#form#0;n#div#0;n#body#0;n#!!top" />
-                <element signature="n#div#6;n#form#0;n#div#0;n#body#0;n#!!top" />
-                <element signature="n#div#7;n#form#0;n#div#0;n#body#0;n#!!top" />
-                <element signature="n#div#8;n#form#0;n#div#0;n#body#0;n#!!top" />
-                <element signature="n#div#9;n#form#0;n#div#0;n#body#0;n#!!top" />
-                <element signature="n#div#0;n#div#13;n#form#0;n#div#0;n#body#0;n#!!top" />
-                <element signature="n#div#0;n#div#0;n#div#1;n#div#13;n#form#0;n#div#0;n#body#0;n#!!top" />
-                <element signature="n#div#2;n#div#0;n#div#1;n#div#13;n#form#0;n#div#0;n#body#0;n#!!top" />
-                <element signature="n#div#2;n#div#13;n#form#0;n#div#0;n#body#0;n#!!top" />
-                <element signature="n#div#0;n#div#15;n#form#0;n#div#0;n#body#0;n#!!top" />
-                <element signature="n#div#0;n#div#0;n#div#1;n#div#15;n#form#0;n#div#0;n#body#0;n#!!top" />
-                <element signature="n#div#1;n#div#0;n#div#1;n#div#15;n#form#0;n#div#0;n#body#0;n#!!top" />
-                <element signature="n#div#2;n#div#15;n#form#0;n#div#0;n#body#0;n#!!top" />
-                <element signature="n#div#0;n#div#17;n#form#0;n#div#0;n#body#0;n#!!top" />
-                <element signature="n#div#0;n#div#0;n#div#1;n#div#17;n#form#0;n#div#0;n#body#0;n#!!top" />
-                <element signature="n#div#1;n#div#0;n#div#1;n#div#17;n#form#0;n#div#0;n#body#0;n#!!top" />
-                <element signature="n#div#2;n#div#0;n#div#1;n#div#17;n#form#0;n#div#0;n#body#0;n#!!top" />
-                <element signature="n#div#2;n#div#17;n#form#0;n#div#0;n#body#0;n#!!top" />
-                <element signature="n#div#0;n#div#19;n#form#0;n#div#0;n#body#0;n#!!top" />
-                <element signature="n#div#0;n#div#0;n#div#1;n#div#19;n#form#0;n#div#0;n#body#0;n#!!top" />
-                <element signature="n#div#1;n#div#0;n#div#1;n#div#19;n#form#0;n#div#0;n#body#0;n#!!top" />
-                <element signature="n#div#2;n#div#0;n#div#1;n#div#19;n#form#0;n#div#0;n#body#0;n#!!top" />
-                <element signature="n#div#2;n#div#19;n#form#0;n#div#0;n#body#0;n#!!top" />
-                <element signature="e#29594#30578#0#HTML" />
-                <element signature="e#30608#31584#0#HTML" />
-                <element signature="e#31615#32604#0#HTML" />
-                <element signature="e#32631#33596#0#HTML" />
-                <element signature="e#33622#33778#0#HTML" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AdminEmployeeController.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="AdminEmployeeController.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/staff/src/main/java/com/hnluchuan/staff/web/controller/admin/AdminEmployeeController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="442">
-              <caret line="358" column="1" selection-start-line="358" selection-start-column="1" selection-end-line="358" selection-end-column="1" />
+            <state relative-caret-position="600">
+              <caret line="48" column="49" selection-start-line="48" selection-start-column="49" selection-end-line="48" selection-end-column="49" />
               <folding>
-                <element signature="method#detail#0;class#AdminEmployeeController#0" />
                 <element signature="method#save#0;class#AdminEmployeeController#0" />
                 <element signature="method#delete#0;class#AdminEmployeeController#0" />
                 <element signature="method#list#0;class#AdminEmployeeController#0" />
@@ -75,11 +31,47 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="employee_detail.jsp" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/staff/src/main/webapp/WEB-INF/jsp/admin/employee/employee_detail.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="200">
+              <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="EmployeeService.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/staff/src/main/java/com/hnluchuan/staff/service/EmployeeService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="875">
+              <caret line="52" column="23" selection-start-line="52" selection-start-column="23" selection-end-line="52" selection-end-column="23" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="EmployeeDAO.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/staff/src/main/java/com/hnluchuan/staff/dao/EmployeeDAO.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="125">
+              <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="employee_list.jsp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/staff/src/main/webapp/WEB-INF/jsp/admin/employee/employee_list.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="154">
-              <caret line="160" column="34" selection-start-line="160" selection-start-column="34" selection-end-line="160" selection-end-column="34" />
+            <state relative-caret-position="3600">
+              <caret line="144" column="46" selection-start-line="144" selection-start-column="24" selection-end-line="144" selection-end-column="46" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="web.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/staff/src/main/webapp/WEB-INF/web.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="850">
+              <caret line="34" column="21" selection-start-line="34" selection-start-column="21" selection-end-line="34" selection-end-column="21" />
             </state>
           </provider>
         </entry>
@@ -87,43 +79,8 @@
       <file leaf-file-name="employee_add.jsp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/staff/src/main/webapp/WEB-INF/jsp/admin/employee/employee_add.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-102">
-              <caret line="192" column="74" selection-start-line="192" selection-start-column="74" selection-end-line="192" selection-end-column="74" />
-              <folding>
-                <element signature="n#div#2;n#form#0;n#div#0;n#body#0;n#!!top" />
-                <element signature="n#div#3;n#form#0;n#div#0;n#body#0;n#!!top" />
-                <element signature="n#div#4;n#form#0;n#div#0;n#body#0;n#!!top" />
-                <element signature="n#div#5;n#form#0;n#div#0;n#body#0;n#!!top" />
-                <element signature="n#div#6;n#form#0;n#div#0;n#body#0;n#!!top" />
-                <element signature="n#div#7;n#form#0;n#div#0;n#body#0;n#!!top" />
-                <element signature="n#div#8;n#form#0;n#div#0;n#body#0;n#!!top" />
-                <element signature="n#div#9;n#form#0;n#div#0;n#body#0;n#!!top" />
-                <element signature="n#div#10;n#form#0;n#div#0;n#body#0;n#!!top" />
-                <element signature="n#div#11;n#form#0;n#div#0;n#body#0;n#!!top" />
-                <element signature="n#style#0;n#div#0;n#div#13;n#form#0;n#div#0;n#body#0;n#!!top" expanded="true" />
-                <element signature="n#div#2;n#div#0;n#div#13;n#form#0;n#div#0;n#body#0;n#!!top" />
-                <element signature="n#div#2;n#div#13;n#form#0;n#div#0;n#body#0;n#!!top" />
-                <element signature="n#div#0;n#div#15;n#form#0;n#div#0;n#body#0;n#!!top" />
-                <element signature="n#div#0;n#div#0;n#div#15;n#form#0;n#div#0;n#body#0;n#!!top" />
-                <element signature="n#div#1;n#div#0;n#div#15;n#form#0;n#div#0;n#body#0;n#!!top" />
-                <element signature="n#div#2;n#div#15;n#form#0;n#div#0;n#body#0;n#!!top" />
-                <element signature="n#div#0;n#div#17;n#form#0;n#div#0;n#body#0;n#!!top" />
-                <element signature="n#div#0;n#div#0;n#div#17;n#form#0;n#div#0;n#body#0;n#!!top" />
-                <element signature="n#div#1;n#div#0;n#div#17;n#form#0;n#div#0;n#body#0;n#!!top" />
-                <element signature="n#div#2;n#div#0;n#div#17;n#form#0;n#div#0;n#body#0;n#!!top" />
-                <element signature="n#div#2;n#div#17;n#form#0;n#div#0;n#body#0;n#!!top" />
-                <element signature="n#div#1;n#div#0;n#div#19;n#form#0;n#div#0;n#body#0;n#!!top" />
-                <element signature="n#div#2;n#div#0;n#div#19;n#form#0;n#div#0;n#body#0;n#!!top" />
-                <element signature="n#div#2;n#div#19;n#form#0;n#div#0;n#body#0;n#!!top" />
-                <element signature="e#19573#20562#0#HTML" />
-                <element signature="e#20589#21554#0#HTML" />
-                <element signature="e#21580#21738#0#HTML" />
-                <element signature="e#21777#22085#0#HTML" />
-                <element signature="e#22123#22528#0#HTML" />
-                <element signature="e#22563#22946#0#HTML" />
-                <element signature="e#22980#23356#0#HTML" />
-                <element signature="e#23387#23675#0#HTML" />
-              </folding>
+            <state relative-caret-position="13150">
+              <caret line="526" column="33" selection-start-line="526" selection-start-column="33" selection-end-line="526" selection-end-column="33" />
             </state>
           </provider>
         </entry>
@@ -155,6 +112,10 @@
       <find>clone_em</find>
       <find>emergencyInfo_con</find>
       <find>clone_e</find>
+      <find>doService</find>
+      <find>do</find>
+      <find>HandlerMapping</find>
+      <find>HandlerMappings</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -188,13 +149,13 @@
         <option value="$PROJECT_DIR$/staff/src/main/webapp/WEB-INF/main-servlet.xml" />
         <option value="$PROJECT_DIR$/staff/src/main/java/com/hnluchuan/staff/service/EmployeeService.java" />
         <option value="$PROJECT_DIR$/staff/src/main/webapp/WEB-INF/jsp/admin/employee/employee_list.jsp" />
-        <option value="$PROJECT_DIR$/staff/src/main/webapp/WEB-INF/jsp/admin/employee/employee_detail.jsp" />
-        <option value="$PROJECT_DIR$/staff/src/main/webapp/WEB-INF/jsp/admin/employee/employee_add.jsp" />
         <option value="$PROJECT_DIR$/staff/src/main/java/com/hnluchuan/staff/service/UserService.java" />
         <option value="$PROJECT_DIR$/staff/src/main/java/com/hnluchuan/staff/dao/UserDAO.java" />
         <option value="$PROJECT_DIR$/staff/src/main/java/com/hnluchuan/staff/service/EmergencyContactService.java" />
         <option value="$PROJECT_DIR$/staff/src/main/java/com/hnluchuan/staff/dto/EmployeeInffoDTO.java" />
+        <option value="$PROJECT_DIR$/staff/src/main/webapp/WEB-INF/jsp/admin/employee/employee_detail.jsp" />
         <option value="$PROJECT_DIR$/staff/src/main/java/com/hnluchuan/staff/web/controller/admin/AdminEmployeeController.java" />
+        <option value="$PROJECT_DIR$/staff/src/main/webapp/WEB-INF/jsp/admin/employee/employee_add.jsp" />
       </list>
     </option>
   </component>
@@ -220,9 +181,9 @@
   <component name="NodePackageJsonFileManager">
     <packageJsonPaths />
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
+  <component name="ProjectFrameBounds" extendedState="7">
+    <option name="x" value="645" />
+    <option name="y" value="38" />
     <option name="width" value="651" />
     <option name="height" value="740" />
   </component>
@@ -249,125 +210,12 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="staff" type="b2602c69:ProjectViewProjectNode" />
-              <item name="staff" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="staff" type="b2602c69:ProjectViewProjectNode" />
-              <item name="staff" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="hnluchuan" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="staff" type="b2602c69:ProjectViewProjectNode" />
-              <item name="staff" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="hnluchuan" type="462c0819:PsiDirectoryNode" />
-              <item name="staff" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="staff" type="b2602c69:ProjectViewProjectNode" />
-              <item name="staff" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="hnluchuan" type="462c0819:PsiDirectoryNode" />
-              <item name="staff" type="462c0819:PsiDirectoryNode" />
-              <item name="dto" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="staff" type="b2602c69:ProjectViewProjectNode" />
-              <item name="staff" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="hnluchuan" type="462c0819:PsiDirectoryNode" />
-              <item name="staff" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="staff" type="b2602c69:ProjectViewProjectNode" />
-              <item name="staff" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="hnluchuan" type="462c0819:PsiDirectoryNode" />
-              <item name="staff" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="controller" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="staff" type="b2602c69:ProjectViewProjectNode" />
-              <item name="staff" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="hnluchuan" type="462c0819:PsiDirectoryNode" />
-              <item name="staff" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="controller" type="462c0819:PsiDirectoryNode" />
-              <item name="admin" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="staff" type="b2602c69:ProjectViewProjectNode" />
-              <item name="staff" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="staff" type="b2602c69:ProjectViewProjectNode" />
-              <item name="staff" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="staff" type="b2602c69:ProjectViewProjectNode" />
-              <item name="staff" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="staff" type="b2602c69:ProjectViewProjectNode" />
-              <item name="staff" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
-              <item name="jsp" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="staff" type="b2602c69:ProjectViewProjectNode" />
-              <item name="staff" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
-              <item name="jsp" type="462c0819:PsiDirectoryNode" />
-              <item name="admin" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="staff" type="b2602c69:ProjectViewProjectNode" />
-              <item name="staff" type="462c0819:PsiDirectoryNode" />
-              <item name="target" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
       <pane id="AndroidView" />
+      <pane id="PackagesPane" />
       <pane id="Scope" />
     </panes>
   </component>
@@ -491,17 +339,21 @@
       <workItem from="1531701365778" duration="1000" />
       <workItem from="1531701832873" duration="29767000" />
       <workItem from="1531787324532" duration="23689000" />
+      <workItem from="1531875432591" duration="16065000" />
+      <workItem from="1531961089270" duration="5054000" />
+      <workItem from="1532047001354" duration="698000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="174290000" />
+    <option name="totallyTimeSpent" value="196107000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
+    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
-      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5098336" side_tool="true" weight="0.3294893" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.51059" side_tool="true" visible="true" weight="0.05930807" />
       <window_info anchor="right" id="Maven Projects" order="7" weight="0.32980332" />
       <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
       <window_info id="Capture Tool" order="6" />
@@ -510,7 +362,7 @@
       <window_info id="Structure" order="1" sideWeight="0.50332594" side_tool="true" weight="0.24432677" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="4" />
-      <window_info anchor="bottom" id="Debug" order="5" sideWeight="0.49016643" weight="0.36408567" />
+      <window_info anchor="bottom" id="Debug" order="5" sideWeight="0.48940998" weight="0.024711696" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="right" id="Palette&#9;" order="8" />
       <window_info id="Image Layers" order="2" />
@@ -520,7 +372,7 @@
       <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49926794" weight="0.32857144" />
       <window_info anchor="bottom" id="Spring" order="11" />
       <window_info anchor="bottom" id="Terminal" order="9" />
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49778762" visible="true" weight="0.25340393" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49778762" visible="true" weight="0.25945538" />
       <window_info anchor="right" id="Bean Validation" order="9" />
       <window_info id="Web" order="7" sideWeight="0.50082374" side_tool="true" weight="0.24054463" />
       <window_info anchor="right" id="Theme Preview" order="5" />
@@ -532,39 +384,6 @@
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3294893" />
     </layout>
-    <layout-to-restore>
-      <window_info id="Designer" order="3" />
-      <window_info anchor="right" id="Palette" order="3" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49926794" weight="0.32857144" />
-      <window_info anchor="bottom" id="Spring" order="11" />
-      <window_info id="Image Layers" order="2" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="3" weight="0.25" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info id="UI Designer" order="4" />
-      <window_info id="Favorites" order="5" sideWeight="0.50265956" side_tool="true" weight="0.24054463" />
-      <window_info anchor="bottom" id="Terminal" order="9" />
-      <window_info id="Capture Tool" order="6" />
-      <window_info anchor="right" id="Capture Analysis" order="4" />
-      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5098336" side_tool="true" weight="0.3294893" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="bottom" id="Java Enterprise" order="12" />
-      <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
-      <window_info anchor="right" id="Maven Projects" order="7" weight="0.32980332" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.3294893" />
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49778762" visible="true" weight="0.24432677" />
-      <window_info anchor="right" id="Database" order="6" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info id="Web" order="7" sideWeight="0.50082374" side_tool="true" weight="0.24054463" />
-      <window_info anchor="right" id="Palette&#9;" order="8" />
-      <window_info anchor="right" id="Theme Preview" order="5" />
-      <window_info id="Structure" order="1" sideWeight="0.50332594" side_tool="true" weight="0.24432677" />
-      <window_info anchor="bottom" id="Inspection" order="4" weight="0.4" />
-      <window_info active="true" anchor="bottom" id="Debug" order="5" sideWeight="0.49016643" visible="true" weight="0.085667215" />
-      <window_info anchor="right" id="Bean Validation" order="9" />
-    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -574,7 +393,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="108" />
+      <option name="time" value="119" />
     </breakpoint-manager>
     <watches-manager>
       <configuration name="MavenRunConfiguration">
@@ -614,125 +433,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/staff/src/main/webapp/WEB-INF/jsp/admin/emergencyContact/emergencyContact_list.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="125">
-          <caret line="20" column="125" selection-start-line="20" selection-start-column="125" selection-end-line="20" selection-end-column="125" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/staff/src/main/java/com/hnluchuan/staff/web/controller/admin/AdminEducationController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="756">
-          <caret line="58" column="30" lean-forward="true" selection-start-line="58" selection-start-column="30" selection-end-line="58" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/staff/src/main/webapp/WEB-INF/jsp/admin/education/education_list.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-55">
-          <caret line="48" column="70" lean-forward="true" selection-start-line="48" selection-start-column="70" selection-end-line="48" selection-end-column="70" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/staff/src/main/java/com/hnluchuan/staff/dao/EmergencyContactDAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-544">
-          <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/staff/src/main/java/com/hnluchuan/staff/dto/EducationDTO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="125">
-          <caret line="5" column="56" lean-forward="true" selection-start-line="5" selection-start-column="56" selection-end-line="5" selection-end-column="56" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/javax/servlet/javax.servlet-api/3.0.1/javax.servlet-api-3.0.1.jar!/javax/servlet/http/HttpServlet.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="525">
-          <caret line="267" selection-start-line="267" selection-end-line="267" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/staff/src/main/java/com/hnluchuan/staff/web/controller/admin/AdminEmergencyContactController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="149">
-          <caret line="38" column="16" lean-forward="true" selection-start-line="38" selection-start-column="16" selection-end-line="38" selection-end-column="16" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/staff/src/main/java/com/hnluchuan/staff/service/EducationService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="757">
-          <caret line="93" column="10" selection-start-line="93" selection-start-column="10" selection-end-line="93" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/com/hnluchuan/luchuan-core/0.0.4-SNAPSHOT/luchuan-core-0.0.4-SNAPSHOT.jar!/com/hnluchuan/core/dao/BaseDAO.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="208">
-          <caret line="172" column="36" selection-start-line="172" selection-start-column="36" selection-end-line="172" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/hibernate/hibernate-core/5.2.10.Final/hibernate-core-5.2.10.Final.jar!/org/hibernate/Session.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="116">
-          <caret line="63" column="10" selection-start-line="63" selection-start-column="10" selection-end-line="63" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/staff/src/main/java/com/hnluchuan/staff/dto/EmployeeInfoDTO2.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="125">
-          <caret line="8" column="27" selection-start-line="8" selection-start-column="27" selection-end-line="8" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/staff/src/main/java/com/hnluchuan/staff/dao/ExperienceDAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="71">
-          <caret line="14" column="11" lean-forward="true" selection-start-line="14" selection-start-column="11" selection-end-line="14" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/staff/src/main/java/com/hnluchuan/staff/web/controller/admin/AdminExperienceController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="93">
-          <caret line="58" column="39" lean-forward="true" selection-start-line="58" selection-start-column="39" selection-end-line="58" selection-end-column="39" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/staff/src/main/java/com/hnluchuan/staff/dao/EmployeeDAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="531">
-          <caret line="45" column="48" lean-forward="true" selection-start-line="45" selection-start-column="48" selection-end-line="45" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/staff/src/main/java/com/hnluchuan/staff/model/EmployeeInffo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="50">
-          <caret line="2" column="26" selection-start-line="2" selection-start-column="26" selection-end-line="2" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/staff/src/main/java/com/hnluchuan/staff/model/EmployeeInfo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="8" column="4" selection-start-line="8" selection-start-column="4" selection-end-line="76" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/staff/src/main/webapp/WEB-INF/jsp/admin/employee/employee_add.html" />
     <entry file="file://$PROJECT_DIR$/staff/src/main/resources/META-INF/applicationContext.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-175">
@@ -744,13 +444,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="300">
           <caret line="90" column="52" selection-start-line="90" selection-start-column="52" selection-end-line="90" selection-end-column="52" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/staff/src/main/webapp/WEB-INF/web.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2958">
-          <caret line="45" column="44" lean-forward="true" selection-start-line="45" selection-start-column="44" selection-end-line="45" selection-end-column="44" />
         </state>
       </provider>
     </entry>
@@ -772,45 +465,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-712">
           <caret line="53" column="43" selection-start-line="53" selection-start-column="43" selection-end-line="53" selection-end-column="43" />
-          <folding>
-            <element signature="e#1902#1903#0" expanded="true" />
-            <element signature="e#1942#1943#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-aop/4.3.9.RELEASE/spring-aop-4.3.9.RELEASE.jar!/org/springframework/aop/aspectj/AbstractAspectJAdvice.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="424" selection-start-line="424" selection-end-line="424" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-aop/4.3.9.RELEASE/spring-aop-4.3.9.RELEASE.jar!/org/springframework/aop/aspectj/AspectJAfterAdvice.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="116">
-          <caret line="23" selection-start-line="23" selection-end-line="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-aop/4.3.9.RELEASE/spring-aop-4.3.9.RELEASE.jar!/org/springframework/aop/interceptor/ExposeInvocationInterceptor.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="327">
-          <caret line="40" selection-start-line="40" selection-end-line="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/staff/src/main/java/com/hnluchuan/staff/service/EmployeeService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="81" column="10" selection-start-line="81" selection-start-column="10" selection-end-line="81" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-core/4.3.9.RELEASE/spring-core-4.3.9.RELEASE.jar!/org/springframework/cglib/proxy/MethodProxy.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="105" column="29" selection-start-line="105" selection-start-column="29" selection-end-line="105" selection-end-column="29" />
         </state>
       </provider>
     </entry>
@@ -884,12 +538,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-656">
           <caret line="31" column="38" selection-start-line="31" selection-start-column="38" selection-end-line="31" selection-end-column="38" />
-          <folding>
-            <element signature="e#2012#2013#0" expanded="true" />
-            <element signature="e#2052#2053#0" expanded="true" />
-            <element signature="e#2694#2695#0" expanded="true" />
-            <element signature="e#2731#2732#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -935,48 +583,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/staff/src/main/webapp/WEB-INF/jsp/admin/employee/employee_add.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-102">
-          <caret line="192" column="74" selection-start-line="192" selection-start-column="74" selection-end-line="192" selection-end-column="74" />
-          <folding>
-            <element signature="n#div#2;n#form#0;n#div#0;n#body#0;n#!!top" />
-            <element signature="n#div#3;n#form#0;n#div#0;n#body#0;n#!!top" />
-            <element signature="n#div#4;n#form#0;n#div#0;n#body#0;n#!!top" />
-            <element signature="n#div#5;n#form#0;n#div#0;n#body#0;n#!!top" />
-            <element signature="n#div#6;n#form#0;n#div#0;n#body#0;n#!!top" />
-            <element signature="n#div#7;n#form#0;n#div#0;n#body#0;n#!!top" />
-            <element signature="n#div#8;n#form#0;n#div#0;n#body#0;n#!!top" />
-            <element signature="n#div#9;n#form#0;n#div#0;n#body#0;n#!!top" />
-            <element signature="n#div#10;n#form#0;n#div#0;n#body#0;n#!!top" />
-            <element signature="n#div#11;n#form#0;n#div#0;n#body#0;n#!!top" />
-            <element signature="n#style#0;n#div#0;n#div#13;n#form#0;n#div#0;n#body#0;n#!!top" expanded="true" />
-            <element signature="n#div#2;n#div#0;n#div#13;n#form#0;n#div#0;n#body#0;n#!!top" />
-            <element signature="n#div#2;n#div#13;n#form#0;n#div#0;n#body#0;n#!!top" />
-            <element signature="n#div#0;n#div#15;n#form#0;n#div#0;n#body#0;n#!!top" />
-            <element signature="n#div#0;n#div#0;n#div#15;n#form#0;n#div#0;n#body#0;n#!!top" />
-            <element signature="n#div#1;n#div#0;n#div#15;n#form#0;n#div#0;n#body#0;n#!!top" />
-            <element signature="n#div#2;n#div#15;n#form#0;n#div#0;n#body#0;n#!!top" />
-            <element signature="n#div#0;n#div#17;n#form#0;n#div#0;n#body#0;n#!!top" />
-            <element signature="n#div#0;n#div#0;n#div#17;n#form#0;n#div#0;n#body#0;n#!!top" />
-            <element signature="n#div#1;n#div#0;n#div#17;n#form#0;n#div#0;n#body#0;n#!!top" />
-            <element signature="n#div#2;n#div#0;n#div#17;n#form#0;n#div#0;n#body#0;n#!!top" />
-            <element signature="n#div#2;n#div#17;n#form#0;n#div#0;n#body#0;n#!!top" />
-            <element signature="n#div#1;n#div#0;n#div#19;n#form#0;n#div#0;n#body#0;n#!!top" />
-            <element signature="n#div#2;n#div#0;n#div#19;n#form#0;n#div#0;n#body#0;n#!!top" />
-            <element signature="n#div#2;n#div#19;n#form#0;n#div#0;n#body#0;n#!!top" />
-            <element signature="e#19573#20562#0#HTML" />
-            <element signature="e#20589#21554#0#HTML" />
-            <element signature="e#21580#21738#0#HTML" />
-            <element signature="e#21777#22085#0#HTML" />
-            <element signature="e#22123#22528#0#HTML" />
-            <element signature="e#22563#22946#0#HTML" />
-            <element signature="e#22980#23356#0#HTML" />
-            <element signature="e#23387#23675#0#HTML" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/staff/src/main/webapp/WEB-INF/jsp/admin/user/user_list.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -984,78 +590,206 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/staff/src/main/webapp/WEB-INF/jsp/admin/employee/employee_detail.jsp">
+    <entry file="file://$PROJECT_DIR$/staff/src/main/java/com/hnluchuan/staff/dto/EmployeeInffoDTO.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="139">
-          <caret line="249" column="47" lean-forward="true" selection-start-line="249" selection-start-column="47" selection-end-line="249" selection-end-column="47" />
-          <folding>
-            <element signature="n#div#1;n#form#0;n#div#0;n#body#0;n#!!top" />
-            <element signature="n#div#2;n#form#0;n#div#0;n#body#0;n#!!top" />
-            <element signature="n#div#3;n#form#0;n#div#0;n#body#0;n#!!top" />
-            <element signature="n#div#4;n#form#0;n#div#0;n#body#0;n#!!top" />
-            <element signature="n#div#5;n#form#0;n#div#0;n#body#0;n#!!top" />
-            <element signature="n#div#6;n#form#0;n#div#0;n#body#0;n#!!top" />
-            <element signature="n#div#7;n#form#0;n#div#0;n#body#0;n#!!top" />
-            <element signature="n#div#8;n#form#0;n#div#0;n#body#0;n#!!top" />
-            <element signature="n#div#9;n#form#0;n#div#0;n#body#0;n#!!top" />
-            <element signature="n#div#0;n#div#13;n#form#0;n#div#0;n#body#0;n#!!top" />
-            <element signature="n#div#0;n#div#0;n#div#1;n#div#13;n#form#0;n#div#0;n#body#0;n#!!top" />
-            <element signature="n#div#2;n#div#0;n#div#1;n#div#13;n#form#0;n#div#0;n#body#0;n#!!top" />
-            <element signature="n#div#2;n#div#13;n#form#0;n#div#0;n#body#0;n#!!top" />
-            <element signature="n#div#0;n#div#15;n#form#0;n#div#0;n#body#0;n#!!top" />
-            <element signature="n#div#0;n#div#0;n#div#1;n#div#15;n#form#0;n#div#0;n#body#0;n#!!top" />
-            <element signature="n#div#1;n#div#0;n#div#1;n#div#15;n#form#0;n#div#0;n#body#0;n#!!top" />
-            <element signature="n#div#2;n#div#15;n#form#0;n#div#0;n#body#0;n#!!top" />
-            <element signature="n#div#0;n#div#17;n#form#0;n#div#0;n#body#0;n#!!top" />
-            <element signature="n#div#0;n#div#0;n#div#1;n#div#17;n#form#0;n#div#0;n#body#0;n#!!top" />
-            <element signature="n#div#1;n#div#0;n#div#1;n#div#17;n#form#0;n#div#0;n#body#0;n#!!top" />
-            <element signature="n#div#2;n#div#0;n#div#1;n#div#17;n#form#0;n#div#0;n#body#0;n#!!top" />
-            <element signature="n#div#2;n#div#17;n#form#0;n#div#0;n#body#0;n#!!top" />
-            <element signature="n#div#0;n#div#19;n#form#0;n#div#0;n#body#0;n#!!top" />
-            <element signature="n#div#0;n#div#0;n#div#1;n#div#19;n#form#0;n#div#0;n#body#0;n#!!top" />
-            <element signature="n#div#1;n#div#0;n#div#1;n#div#19;n#form#0;n#div#0;n#body#0;n#!!top" />
-            <element signature="n#div#2;n#div#0;n#div#1;n#div#19;n#form#0;n#div#0;n#body#0;n#!!top" />
-            <element signature="n#div#2;n#div#19;n#form#0;n#div#0;n#body#0;n#!!top" />
-            <element signature="e#29594#30578#0#HTML" />
-            <element signature="e#30608#31584#0#HTML" />
-            <element signature="e#31615#32604#0#HTML" />
-            <element signature="e#32631#33596#0#HTML" />
-            <element signature="e#33622#33778#0#HTML" />
-          </folding>
+        <state relative-caret-position="-150">
+          <caret line="15" column="47" selection-start-line="15" selection-start-column="47" selection-end-line="15" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-aop/4.3.9.RELEASE/spring-aop-4.3.9.RELEASE.jar!/org/springframework/aop/framework/AopContext.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="83">
+          <caret line="32" selection-start-line="32" selection-end-line="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-aop/4.3.9.RELEASE/spring-aop-4.3.9.RELEASE.jar!/org/springframework/aop/framework/AdvisedSupport.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="71" selection-start-line="71" selection-end-line="71" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-aop/4.3.9.RELEASE/spring-aop-4.3.9.RELEASE.jar!/org/springframework/aop/target/SingletonTargetSource.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="26" selection-start-line="26" selection-end-line="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/security/spring-security-web/4.2.3.RELEASE/spring-security-web-4.2.3.RELEASE.jar!/org/springframework/security/web/FilterChainProxy.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="124">
+          <caret line="172" selection-start-line="172" selection-end-line="172" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/security/spring-security-web/4.2.3.RELEASE/spring-security-web-4.2.3.RELEASE.jar!/org/springframework/security/web/access/intercept/FilterSecurityInterceptor.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="121">
+          <caret line="36" selection-start-line="36" selection-end-line="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-webmvc/4.3.9.RELEASE/spring-webmvc-4.3.9.RELEASE.jar!/org/springframework/web/servlet/FrameworkServlet.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="121">
+          <caret line="407" selection-start-line="407" selection-end-line="407" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-core/4.3.9.RELEASE/spring-core-4.3.9.RELEASE.jar!/org/springframework/cglib/proxy/MethodProxy.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="104" selection-start-line="104" selection-end-line="104" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-aop/4.3.9.RELEASE/spring-aop-4.3.9.RELEASE.jar!/org/springframework/aop/framework/adapter/MethodBeforeAdviceInterceptor.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="131">
+          <caret line="23" selection-start-line="23" selection-end-line="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-aop/4.3.9.RELEASE/spring-aop-4.3.9.RELEASE.jar!/org/springframework/aop/framework/CglibAopProxy.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="26">
+          <caret line="515" selection-start-line="515" selection-end-line="515" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-aop/4.3.9.RELEASE/spring-aop-4.3.9.RELEASE.jar!/org/springframework/aop/framework/ReflectiveMethodInvocation.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="101">
+          <caret line="70" selection-start-line="70" selection-end-line="70" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-aop/4.3.9.RELEASE/spring-aop-4.3.9.RELEASE.jar!/org/springframework/aop/interceptor/ExposeInvocationInterceptor.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="101">
+          <caret line="43" selection-start-line="43" selection-end-line="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-aop/4.3.9.RELEASE/spring-aop-4.3.9.RELEASE.jar!/org/springframework/aop/aspectj/AspectJAfterAdvice.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="116">
+          <caret line="21" selection-start-line="21" selection-end-line="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-aop/4.3.9.RELEASE/spring-aop-4.3.9.RELEASE.jar!/org/springframework/aop/aspectj/MethodInvocationProceedingJoinPoint.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="118">
+          <caret line="37" selection-start-line="37" selection-end-line="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-aop/4.3.9.RELEASE/spring-aop-4.3.9.RELEASE.jar!/org/springframework/aop/aspectj/AbstractAspectJAdvice.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="101">
+          <caret line="409" selection-start-line="409" selection-end-line="409" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/staff/src/main/java/com/hnluchuan/staff/aop/TimeControllerAOP.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="268">
+          <caret line="32" selection-start-line="32" selection-end-line="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-aop/4.3.9.RELEASE/spring-aop-4.3.9.RELEASE.jar!/org/springframework/aop/aspectj/AspectJAroundAdvice.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="118">
+          <caret line="39" selection-start-line="39" selection-end-line="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/4.3.9.RELEASE/spring-web-4.3.9.RELEASE.jar!/org/springframework/web/method/support/InvocableHandlerMethod.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="143">
+          <caret line="118" column="49" lean-forward="true" selection-start-line="118" selection-start-column="49" selection-end-line="118" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/staff/src/main/webapp/WEB-INF/jsp/admin/employee/employee_add.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="13150">
+          <caret line="526" column="33" selection-start-line="526" selection-start-column="33" selection-end-line="526" selection-end-column="33" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/staff/src/main/webapp/WEB-INF/jsp/admin/employee/employee_list.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="160" column="34" selection-start-line="160" selection-start-column="34" selection-end-line="160" selection-end-column="34" />
+        <state relative-caret-position="3600">
+          <caret line="144" column="46" selection-start-line="144" selection-start-column="24" selection-end-line="144" selection-end-column="46" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/staff/src/main/java/com/hnluchuan/staff/dto/EmployeeInffoDTO.java">
+    <entry file="file://$PROJECT_DIR$/staff/src/main/java/com/hnluchuan/staff/web/MyDispatcherServlet.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="24" column="33" selection-start-line="24" selection-start-column="33" selection-end-line="24" selection-end-column="33" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#680#681#0" expanded="true" />
-            <element signature="e#703#704#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="150">
+          <caret line="23" column="24" selection-start-line="23" selection-start-column="24" selection-end-line="23" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-webmvc/4.3.9.RELEASE/spring-webmvc-4.3.9.RELEASE.jar!/org/springframework/web/servlet/DispatcherServlet.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-6034">
+          <caret line="182" column="44" lean-forward="true" selection-start-line="182" selection-start-column="44" selection-end-line="182" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/staff/src/main/webapp/WEB-INF/web.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="850">
+          <caret line="34" column="21" selection-start-line="34" selection-start-column="21" selection-end-line="34" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/staff/src/main/java/com/hnluchuan/staff/service/EmployeeService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="875">
+          <caret line="52" column="23" selection-start-line="52" selection-start-column="23" selection-end-line="52" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/staff/src/main/java/com/hnluchuan/staff/dao/EmployeeDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="125">
+          <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/staff/src/main/java/com/hnluchuan/staff/web/controller/admin/AdminEmployeeController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="358" column="1" selection-start-line="358" selection-start-column="1" selection-end-line="358" selection-end-column="1" />
+        <state relative-caret-position="600">
+          <caret line="48" column="49" selection-start-line="48" selection-start-column="49" selection-end-line="48" selection-end-column="49" />
           <folding>
-            <element signature="method#detail#0;class#AdminEmployeeController#0" />
             <element signature="method#save#0;class#AdminEmployeeController#0" />
             <element signature="method#delete#0;class#AdminEmployeeController#0" />
             <element signature="method#list#0;class#AdminEmployeeController#0" />
             <element signature="method#search#0;class#AdminEmployeeController#0" />
             <element signature="method#add_employee#0;class#AdminEmployeeController#0" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/staff/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="139">
+          <caret line="67" column="45" selection-start-line="67" selection-start-column="45" selection-end-line="67" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/staff/src/main/webapp/WEB-INF/jsp/admin/employee/employee_detail.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
         </state>
       </provider>
     </entry>
